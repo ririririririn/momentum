@@ -1,0 +1,166 @@
+
+/* 기본 설정 */
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  /* font-family: "Fauna One", serif; */
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgba(245, 245, 220, 0.692);
+}
+
+
+
+/*  */
+#layout-login{
+  padding-top: 30vh;
+  /* display: none; */
+  
+}
+
+#login-form {
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.greeting {
+  font-size: 100px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.userid {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+  background: transparent;
+  border-bottom: #3a3845 1px solid;
+  font-weight: 300;
+}
+
+.btnLogin {
+  background-color: #3a3845;
+  padding: 10px 25px;
+  border-radius: 25px;
+  color: whitesmoke;
+  cursor: pointer;
+  border: none;
+  font-weight: 300;
+}
+
+/* 
+
+
+
+https://kr.freepik.com/free-vector/funky-tone-memphis-background_14731229.htm#query=%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8%20%EB%B0%B0%EA%B2%BD&position=49&from_view=search&track=ais
+*/
+
+/* 
+8D7B68
+A4907C
+C8B6A6
+F1DEC9
+
+
+*/
+
+
+
+/* header */
+header{
+  width: 100%;
+  height: 8vh;
+  background-color: #8249104a;
+}
+
+/*  */
+
+#layout-todo{
+  /* display: grid; */
+  /* grid-template-columns: 1.2fr 4fr; */
+  /* column-gap: 50px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh 10vw 15vh;
+  column-gap: 50px;
+}
+.container-user{
+  /* border: 20px solid #000; */
+  border-radius: 20px;
+  /* background-color: #cab5a177 ; */
+  text-align: center;
+
+}
+
+.user-img{
+  background-color: #E1EEDD;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+
+.user-name{
+  margin-top: 20px;
+  width: 100%;
+
+}
+
+
+.container-todo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr;
+  text-align: center;
+  row-gap: 30px;
+ width: 80vw;
+ padding-top: 50px;
+
+
+}
+.todobox{
+  
+  height: 300px;
+  border-top: 1px solid #000;
+  text-align: center;
+  position: relative;
+}
+.day-todo{
+  border-bottom: 1px solid #000;
+  
+}
+.todo-list{}
+
+.todobox input{
+  display: block;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  /* border: 1px solid black  ; */
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: -30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
