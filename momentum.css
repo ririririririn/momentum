@@ -1,4 +1,3 @@
-
 /* 기본 설정 */
 
 * {
@@ -19,23 +18,27 @@ body {
   background-color: rgba(245, 245, 220, 0.692);
 }
 
-
+.hidden {
+  display: none;
+}
 
 /*  */
-#layout-login{
+#layout-login {
   padding-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /* display: none; */
-  
 }
 
 #login-form {
   margin: 0 auto;
   width: 500px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 300px;
 }
 
 .greeting {
@@ -82,10 +85,8 @@ F1DEC9
 
 */
 
-
-
 /* header */
-header{
+header {
   width: 100%;
   height: 8vh;
   background-color: #8249104a;
@@ -93,7 +94,7 @@ header{
 
 /*  */
 
-#layout-todo{
+#layout-todo {
   /* display: grid; */
   /* grid-template-columns: 1.2fr 4fr; */
   /* column-gap: 50px; */
@@ -102,55 +103,48 @@ header{
   padding: 10vh 10vw 15vh;
   column-gap: 50px;
 }
-.container-user{
+.container-user {
   /* border: 20px solid #000; */
   border-radius: 20px;
   /* background-color: #cab5a177 ; */
   text-align: center;
-
 }
 
-.user-img{
-  background-color: #E1EEDD;
+.user-img {
+  background-color: #e1eedd;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   display: inline-block;
-
 }
 
-.user-name{
+.user-name {
   margin-top: 20px;
   width: 100%;
-
 }
 
-
-.container-todo{
+.container-todo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 2fr;
   text-align: center;
   row-gap: 30px;
- width: 80vw;
- padding-top: 50px;
-
-
+  width: 80vw;
+  padding-top: 50px;
 }
-.todobox{
-  
+.todobox {
   height: 300px;
   border-top: 1px solid #000;
   text-align: center;
   position: relative;
 }
-.day-todo{
+.day-todo {
   border-bottom: 1px solid #000;
-  
 }
-.todo-list{}
+.todo-list {
+}
 
-.todobox input{
+.todobox input {
   display: block;
   background-color: inherit;
   outline: none;
@@ -163,4 +157,3 @@ header{
   padding: 0 20px;
   box-sizing: border-box;
 }
-
