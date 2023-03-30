@@ -149,11 +149,20 @@ header {
   background-color: inherit;
   outline: none;
   border: none;
-  /* border: 1px solid black  ; */
+  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   position: absolute;
   top: -30px;
   padding: 0 20px;
   box-sizing: border-box;
+}
+
+.btn-todo-input {
+  cursor: pointer;
+  position: absolute;
+  top: -29px;
+  right: 10px;
+  border: none;
+  background-color: inherit;
 }

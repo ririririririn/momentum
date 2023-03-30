@@ -39,6 +39,8 @@
     <!-- 메인페이지...-->
     <div id="main-page">
       <header class="">
+        <span class="date"></span>
+        <span class="clock"></span>
         <button class="btnLogout">logout</button>
       </header>
 
@@ -49,50 +51,53 @@
           <!-- 투두 컨테이너  -->
         </div>
         <div class="container-todo">
-          <div class="todobox">
+          <form class="todobox">
             <input type="text" />
+            <button class="btn-todo-input hidden">Χ</button>
             <span class="day-todo">ANYTHING</span>
 
             <ul class="todo-list"></ul>
-          </div>
-          <div class="todobox">
+          </form>
+          <form class="todobox">
             <input type="text" />
             <span class="day-todo">MON</span>
             <ul></ul>
-          </div>
-          <div class="todobox">
+          </form>
+          <form class="todobox">
             <input type="text" />
             <span class="day-todo">TUE</span>
             <ul></ul>
-          </div>
-          <div class="todobox">
+          </form>
+          <form class="todobox">
             <input type="text" />
             <span class="day-todo">WED</span>
             <ul></ul>
-          </div>
-          <div class="todobox">
+          </form>
+          <form class="todobox">
             <input type="text" />
             <span class="day-todo">THU</span>
             <ul></ul>
-          </div>
-          <div class="todobox">
+          </form>
+          <form class="todobox">
             <input type="text" />
             <span class="day-todo">FRI</span>
             <ul></ul>
-          </div>
-          <div class="todobox">
+          </form>
+          <form class="todobox">
             <input type="text" />
             <span class="day-todo">SAT</span>
             <ul></ul>
-          </div>
-          <div class="todobox">
+          </form>
+          <form class="todobox">
             <input type="text" />
             <span class="day-todo">SUN</span>
             <ul></ul>
-          </div>
+          </form>
         </div>
       </div>
     </div>
+    <script src="clock.js"></script>
     <script src="./login.js"></script>
+    <script src="./todo.js"></script>
   </body>
 </html>
