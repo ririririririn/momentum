@@ -1,103 +1,29 @@
 <!DOCTYPE html>
-<html lang="ko-kr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./momentum.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fauna+One&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/914e5789da.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>momentum</title>
   </head>
   <body>
-    <div id="login-page">
-      <div id="layout-login">
-        <h1 class="greeting">Hello</h1>
-        <form id="login-form">
-          <input
-            class="userid"
-            type="text"
-            placeholder="What is your name?"
-            required
-            maxlength="16"
-          />
-          <button class="btnLogin" type="submit">Log-in</button>
-        </form>
-      </div>
+    <!-- login Page -->
+    <div class="login-layout">
+      <h2>Hello</h2>
+      <form class="login-form">
+        <input type="text" required maxlength="16" />
+      </form>
     </div>
-
-    <!-- 메인페이지...-->
-    <div id="main-page">
-      <header class="">
-        <span class="date"></span>
-        <span class="clock"></span>
-        <button class="btnLogout">logout</button>
-      </header>
-
-      <div id="layout-todo" class="">
-        <div class="container-user">
-          <div class="user-img"><input type="file" accept="image/*" /></div>
-          <div class="user-name"></div>
-          <!-- 투두 컨테이너  -->
-        </div>
-        <div class="container-todo">
-          <form class="todobox">
-            <input type="text" />
-            <button class="btn-todo-input hidden">Χ</button>
-            <span class="day-todo">ANYTHING</span>
-
-            <ul class="todo-list"></ul>
-          </form>
-          <form class="todobox">
-            <input type="text" />
-            <span class="day-todo">MON</span>
-            <ul></ul>
-          </form>
-          <form class="todobox">
-            <input type="text" />
-            <span class="day-todo">TUE</span>
-            <ul></ul>
-          </form>
-          <form class="todobox">
-            <input type="text" />
-            <span class="day-todo">WED</span>
-            <ul></ul>
-          </form>
-          <form class="todobox">
-            <input type="text" />
-            <span class="day-todo">THU</span>
-            <ul></ul>
-          </form>
-          <form class="todobox">
-            <input type="text" />
-            <span class="day-todo">FRI</span>
-            <ul></ul>
-          </form>
-          <form class="todobox">
-            <input type="text" />
-            <span class="day-todo">SAT</span>
-            <ul></ul>
-          </form>
-          <form class="todobox">
-            <input type="text" />
-            <span class="day-todo">SUN</span>
-            <ul></ul>
-          </form>
-        </div>
-      </div>
+    <!-- main Page -->
+    <div class="main-layout">
+      <header></header>
+      <div></div>
+      <form class="todo-form">
+        <input type="text" />
+        <button></button>
+        <ul class="todo-list-box"></ul>
+      </form>
     </div>
-    <script src="clock.js"></script>
-    <script src="./login.js"></script>
     <script src="./todo.js"></script>
   </body>
 </html>
