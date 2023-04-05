@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>momentum</title>
+    <link rel="stylesheet" href="momentum.css">
   </head>
   <body>
     <!-- login Page -->
@@ -12,18 +13,52 @@
       <h2>Hello</h2>
       <form class="login-form">
         <input type="text" required maxlength="16" />
+        <button>LOGIN</button>
       </form>
     </div>
     <!-- main Page -->
     <div class="main-layout">
-      <header></header>
-      <div></div>
+      <header>
+        <button class="btn-loggout" type="button">LOGOUT</button>
+      </header>
+      <div>
+        <button class="btn-bg">bgc</button>
+        <ul class="ul-btn-bg">
+          <li><button class="btn-bg-change change-color1"></button></li>
+          <li><button class="btn-bg-change change-color2"></button></li>
+          <li><button class="btn-bg-change change-color3"></button></li>
+          <li><button class="btn-bg-change change-color4"></button></li>
+          <li><button class="btn-bg-change change-color5"></button></li>
+          <li><button class="btn-bg-change change-color6"></button></li>
+          <li><button class="btn-bg-change change-color7"></button></li>
+          <li><button class="btn-bg-change change-color8"></button></li>
+          <li><button class="btn-bg-change change-color9"></button></li>
+        </ul>
+      </div>
+      <div class="weather-container">
+        <span class="weather"></span>
+        <span class="temp"></span>
+        <span class="city"></span>
+      </div>
+
+        <ul class="water-container">
+          <li><button class="water"></button></li>          <li><button class="water"></button></li>          <li><button class="water"></button></li>         <li><button class="water"></button></li>
+          <li><button class="water"></button></li>        
+        </ul>
+
+      <div>
+        <span class="quote"></span>
+        <span class="author"></span>
+      </div>
       <form class="todo-form">
         <input type="text" />
         <button></button>
         <ul class="todo-list-box"></ul>
       </form>
     </div>
+    <script src="./quotes.js"></script>
+    <script src="./backGround.js"></script>
     <script src="./todo.js"></script>
+    <script src="./weather.js"></script>
   </body>
 </html>

@@ -6,48 +6,59 @@ const ulToDo = document.querySelector(".todo-list-box");
 formToDo.addEventListener("submit", handleSubmit);
 
 /*  */
-const toDos = [];
+let toDos = [];
 
 /* form event */
 function handleSubmit(e) {
   e.preventDefault();
-  const newToDo = inputToDo.value;
-  addToDoList(newToDo);
-  toDos.push(newToDo);
-  saveToDos();
+  const newToDo = inputToDo.value;    
   inputToDo.value = "";
+  const newToDoObj = {
+      id:Date.now(),
+      text:newToDo
+    }
+    if(newToDoObj.text.trim().length=== 0){
+      return;
+    }
+  addToDoList(newToDoObj);
+  toDos.push(newToDoObj);
+  saveToDos();
 }
 /*  add todo list */
-function addToDoList(newToDo) {
-  const li = document.createElement("li");
-  const span = document.createElement("span");
-  const btnToDoDel = document.createElement("button");
-  if (newToDo.trim() !== "") {
-    span.innerText = newToDo;
+function addToDoList(newToDoObj) {
+ 
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    const btnToDoDel = document.createElement("button");
+    li.id=newToDoObj.id; // 막힌 부분!
+    span.innerText = newToDoObj.text;
     li.appendChild(span);
     li.appendChild(btnToDoDel);
     ulToDo.appendChild(li);
+    btnToDoDel.addEventListener("click", delToDoList);
   }
-
-  btnToDoDel.addEventListener("click", delToDoList);
-}
 
 /* todoList remove*/
 function delToDoList(e) {
   const li = e.target.parentElement;
   li.remove();
+  toDos= toDos.filter((todo)=>todo.id !== parseInt(li.id));
+  saveToDos()
+  // localStorage.removeItem()
+
 }
 
 /* localStorage Save */
 function saveToDos() {
   localStorage.setItem("todos", JSON.stringify(toDos));
-  console.log(JSON.stringify(toDos));
+  // console.log(JSON.stringify(toDos));
 }
 
 const savedToDos = localStorage.getItem("todos");
 
 if (savedToDos !== null) {
   const parsedToDos = JSON.parse(savedToDos); // 배열로 만들어줌
-
-  parsedToDos.forEach((todo) => addToDoList(todo));
+  toDos = parsedToDos
+  console.log(parsedToDos)
+  parsedToDos.forEach(addToDoList);
 }
