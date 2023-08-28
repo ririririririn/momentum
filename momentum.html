@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>momentum</title>
-    <link rel="stylesheet" href="momentum.css">
+    <script
+      src="https://kit.fontawesome.com/914e5789da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="momentum.css" />
   </head>
   <body>
     <!-- login Page -->
     <div class="login-layout">
-      <h2>Hello</h2>
+      <h2 class="greeting">Hello!</h2>
       <form class="login-form">
         <input type="text" required maxlength="16" />
-        <button>LOGIN</button>
+        <button class="btn-login">LOGIN</button>
       </form>
     </div>
     <!-- main Page -->
     <div class="main-layout">
       <header>
+        <h2 class="user-name"></h2>
         <button class="btn-loggout" type="button">LOGOUT</button>
       </header>
       <div>
@@ -41,10 +46,38 @@
         <span class="city"></span>
       </div>
 
-        <ul class="water-container">
-          <li><button class="water"></button></li>          <li><button class="water"></button></li>          <li><button class="water"></button></li>         <li><button class="water"></button></li>
-          <li><button class="water"></button></li>        
-        </ul>
+      <ul class="water-container">
+        <li>
+          <button class="cup">
+            <i class="fa-solid fa-glass-water-droplet"></i>
+            <i class="fa-solid fa-glass-water hidden"></i>
+          </button>
+        </li>
+        <li>
+          <button class="cup">
+            <i class="fa-solid fa-glass-water-droplet"></i>
+            <i class="fa-solid fa-glass-water hidden"></i>
+          </button>
+        </li>
+        <li>
+          <button class="cup">
+            <i class="fa-solid fa-glass-water-droplet"></i>
+            <i class="fa-solid fa-glass-water hidden"></i>
+          </button>
+        </li>
+        <li>
+          <button class="cup">
+            <i class="fa-solid fa-glass-water-droplet"></i>
+            <i class="fa-solid fa-glass-water hidden"></i>
+          </button>
+        </li>
+        <li>
+          <button class="cup">
+            <i class="fa-solid fa-glass-water-droplet"></i>
+            <i class="fa-solid fa-glass-water hidden"></i>
+          </button>
+        </li>
+      </ul>
 
       <div>
         <span class="quote"></span>
@@ -55,10 +88,12 @@
         <button></button>
         <ul class="todo-list-box"></ul>
       </form>
+      <script src="./login.js"></script>
+      <script src="./quotes.js"></script>
+      <script src="./background.js"></script>
+      <script src="./todo.js"></script>
+      <script src="./weather.js"></script>
+      <script src="./water.js"></script>
     </div>
-    <script src="./quotes.js"></script>
-    <script src="./backGround.js"></script>
-    <script src="./todo.js"></script>
-    <script src="./weather.js"></script>
   </body>
 </html>
